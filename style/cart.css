@@ -1,0 +1,106 @@
+.cart-section {
+    min-height: 700px;
+    width: 1200px;
+}
+.checkout-title-wrapper {
+    width: 100%;
+}
+.cart-section h1 {
+    padding: 40px 0;
+    text-align: center;
+}
+.checkout-wrapper {
+    backdrop-filter: blur(10px);
+    margin-bottom: 100px;
+}
+.product-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    border: 1px solid #bebebe;
+    border-right: none;
+    border-left: none;
+}
+.product {
+    letter-spacing: 5px;
+}
+.product-info {
+    display: flex;
+}
+.info-picture img {
+    width: 200px;
+    height: 200px;
+}
+.product-data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0 20px;
+    padding: 10px;
+}
+.name {
+    font-size: 30px;
+}
+.price {
+    font-size: 20px;
+}
+.quantity-changer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.quantity-changer button {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    height: 40px;
+    width: 50px;
+    background-color: white;
+}
+.minus {
+    border-right: 1px solid #2e2e2e;
+}
+.plus {
+    border-left: 1px solid #2e2e2e;
+}
+.quantity-value {
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    outline: none;
+    font-family: "Necropsy";
+    font-size: 30px;
+    background-color: #eaeaea;
+}
+.checkout {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    font-size: 28px;
+}
+.delete-product {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    margin: 10px;
+}
+.line {
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: white ;
+    bottom: 45%;
+}
+.line1 {
+    transform: rotate(45deg);
+}
+.line2 {
+    transform: rotate(-45deg);
+}
+.total {
+    font-size: 30px;
+    padding: 10px;
+}

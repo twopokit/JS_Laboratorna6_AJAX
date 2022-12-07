@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="/style/header.css">
+    <link rel="stylesheet" href="/style/footer.css">
+    <link rel="stylesheet" href="/style/adaptive.css">
+    <link rel="stylesheet" href="/style/cart.css">
+    <title>Moment.jpg - Gondah's photo portfolio</title>
+    <link rel="icon" type="image/x-icon" href="../media/logo.png">
+</head>
+<body>
+    <div class="wrapper">
+        <header id="header">
+            <nav class="header-container">
+                <div class="header _container">
+                    <div class="logo-picture">
+                        <a href="/html/index.html">
+                            <img src="../media/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="title-container">
+                        <h1 class="title">Moment.jpg</h1>
+                    </div>
+                    <div class="shopping-cart">
+                        <a>
+                            <img src="/media/shopping-cart.png" />
+                        </a>
+                        <div class="amount-cart-wrapper">
+                            <span id="productsAmountInCart"></span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="cart-section _container">
+                <div class="checkout-title-wrapper">
+                    <h1>Checkout</h1>
+                </div>
+                <div class="checkout-wrapper" id="checkoutWrapper">
+                    <!-- <div class="product-wrapper">
+                        <div class="product">
+                            <div class="product-info">
+                                <div class="info-picture">
+                                    <img src="/media/krik.png" alt="picture" />
+                                </div>
+                                <div class="product-data">
+                                    <div class="info-text">
+                                        <p class="name">Italian shot</p>
+                                        <p class="price">450 uah</p>
+                                    </div>
+                                    <div class="quantity-changer">
+                                        <button class="minus">-</button>
+                                        <input type="text" class="quantity-value" id="quantityProduct"/>
+                                        <button class="plus">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkout">
+                            <div class="delete-product" id="deleteProduct">
+                                <div class="line1 line"></div>
+                                <div class="line2 line"></div>
+                            </div>
+                            <div class="total">
+                                <span>Total:</span>
+                                <span id="totalSum">450 uah</span>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section class="footer-content _container">
+                <div class="title-container__footer">
+                    <h2 class="title__footer">Did you like my portfolio?</h2>
+                </div>
+                <div class="contact-information">
+                    <p class="title__contact-information">Contact me for cooperation:</p>
+                    <div class="socials__footer">
+                        <div class="gmail__footer social">
+                            <img src="../media/gmail_logo.png" alt="gmail">
+                            <a href="#">gondah.jpg@gmail.com</a>
+                        </div>
+                        <div class="instagram__footer social">
+                            <img src="../media/instagram-logo-color.png" alt="instagram">
+                            <a href="#">@gondah.jpg</a>
+                        </div>
+                        <div class="telegram__footer social">
+                            <img src="../media/telegram-logo-color.png" alt="telegram">
+                            <a href="#">@GondahPhoto</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright__footer">
+                    <div class="author-contact">
+                        <a href="#">mykyta.topchii@nure.ua</a>
+                    </div>
+                    <div class="date-copyright"><span>© 2022 Laba6</span></div>
+                </div>
+            </section>
+        </footer>
+        <div class="to-up-button__wrapper">
+            <a href="#header" class="to-up-button"></a>
+        </div>
+    </div>
+    
+    <script src="../script/jquery.min.js"></script>
+    <script src="../script/script.js"></script>
+    <script src="/script/getProducts.js"></script>
+    <script src="/script/crudProduct.js"></script>
+    <script src="/script/updateCartIcon.js"></script>
+    <script src="/script/quantityCartInput.js"></script>
+    <script src="/script/cart.js"></script>
+</body>
+</html>

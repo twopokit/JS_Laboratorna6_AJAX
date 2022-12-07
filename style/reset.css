@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+span::selection, a::selection, p::selection, img::selection, h1::selection, marquee::selection, h1::selection,
+h2::selection, h3::selection, h4::selection, h5::selection, h6::selection{
+    background-color: rgb(125, 98, 98);
+    color: black;
+}
+a, a:visited, a:active {
+    color: white;
+    text-decoration: none;
+}
+ul, ol, li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+button {
+    background: none;
+    cursor: pointer;
+}
+@font-face {
+    font-family: Necropsy;
+    src: url("../media/necropsy_[allfont.ru].ttf");
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(110, 110, 110, 0.8);
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(92, 92, 92);
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: rgba(255, 255, 255, 0.401);
+}
+::-webkit-scrollbar-track {
+    border: none;
+    background-color: #2e2d2d;
+    transition: 1s ease-in-out;
+}
+* {
+    transition: 0.1s;
+}
+body {
+    font-family: Necropsy;
+    font-size: 36px;
+    letter-spacing: 8px;
+    color: #f0f0f0;
+    background-image: url("../media/background.png");
+    background-attachment: fixed;
+    background-size: cover;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+._container {
+    margin: 0 auto;
+    width: 3000px;
+}
+

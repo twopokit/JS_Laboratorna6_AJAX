@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="/style/header.css">
+    <link rel="stylesheet" href="/style/photos_section.css">
+    <link rel="stylesheet" href="/style/footer.css">
+    <link rel="stylesheet" href="/style/adaptive.css">
+    <title>Moment.jpg - Gondah's photo portfolio</title>
+    <link rel="icon" type="image/x-icon" href="../media/logo.png">
+</head>
+<body>
+    <div class="wrapper">
+        <header id="up">
+            <nav class="header-container" id="header">
+                <div class="header _container">
+                    <div class="logo-picture">
+                        <a>
+                            <img src="../media/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="title-container">
+                        <h1 class="title">Moment.jpg</h1>
+                    </div>
+                    <div class="shopping-cart">
+                        <a href="/html/cart.html">
+                            <img src="/media/shopping-cart.png" />
+                        </a>
+                        <div class="amount-cart-wrapper">
+                            <span id="productsAmountInCart"></span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="content__header _container">
+            <div class="text-container">
+                <div class="text__header">
+                    <p>Hi,</p> 
+                        <br>
+                        <p>I am <span class="red">Gondah</span> and I am 
+                        a <span class="red">photographer</span>.</p>
+                        <br>
+                        <p>If you speak English,
+                        I gonna make some
+                        photos of <span class="red">you</span>.</p>
+                        <br>
+                        <p>Have a good day.
+                        <span class="red">I know</span> you will..</p>
+                        <br>
+                        <p>You can look at <span class="red">my works</span> below.</p>
+                        </div>
+            </div>
+            <div class="gondah-container">
+                <img src="/media/autoportrait.png" alt="Gondah">
+                <p class="gondah-sign">It is me</p>
+            </div>
+        </div>
+        <main>
+            <section class="photos-container">
+                <div class="title-container__photos">
+                    <h2 class="title__photos">My works</h2> 
+                </div>
+                <div class="sort-panel-wrapper">
+                    <div class="sort-panel">
+                        <div class="selection">
+                            <span>Sort by</span>
+                            <select onchange="changeSelect()" id="selectSort">
+                                <option>Price ascending</option>
+                                <option>Price descending</option>
+                                <option selected>Accessibility</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-panel-wrapper">
+                    <div class="filter-panel">
+                        <div class="filter">
+                            <div class="input-wrapper">
+                                <div class="price-filter">
+                                    <input 
+                                        type="range"
+                                        class="price-filter-input"
+                                        id="priceFilter"
+                                    />
+                                    <div class="range-price" id="rangeVal"></div>
+                                </div>
+                                <div class="accessebility-filter">
+                                    <input 
+                                        type="checkbox"
+                                        class="accessebility-filter-input"
+                                        id="accessebilityFilter"
+                                    />
+                                    <span>Show only available</span>
+                                </div>
+                            </div>
+                            <div class="apply-button-wrapper">
+                                <button class="apply-button" id="apply">Apply</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="photos-block-wrapper"></div>
+            </section>
+            <section class="locations-section">
+                <div class="title-container__location">
+                    <h2 class="title__location">Locations</h2> 
+                </div>
+                <div class="location-container">
+                    <div class="location">
+                        <img class="woods-picture" id="WoodsPic" src="../media/woods.png" alt="nature">
+                        <p class="location-sign">nature</p>
+                    </div>
+                    <div class="location">
+                        <img class="studio-picture" id="StudioPic" src="../media/studio.png" alt="studio">
+                        <p class="location-sign">studio</p>
+                    </div>
+                    <div class="location">
+                        <img class="home-picture" id="HomePic" src="../media/home.png" alt="your home">
+                        <p class="location-sign">your home</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section class="footer-content _container">
+                <div class="title-container__footer">
+                    <h2 class="title__footer">Did you like my portfolio?</h2>
+                </div>
+                <div class="contact-information">
+                    <p class="title__contact-information">Contact me for cooperation:</p>
+                    <div class="socials__footer">
+                        <div class="gmail__footer social">
+                            <img src="../media/gmail_logo.png" alt="gmail">
+                            <a href="#">gondah.jpg@gmail.com</a>
+                        </div>
+                        <div class="instagram__footer social">
+                            <img src="../media/instagram-logo-color.png" alt="instagram">
+                            <a href="#">@gondah.jpg</a>
+                        </div>
+                        <div class="telegram__footer social">
+                            <img src="../media/telegram-logo-color.png" alt="telegram">
+                            <a href="#">@GondahPhoto</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright__footer">
+                    <div class="author-contact">
+                        <a href="#">mykyta.topchii@nure.ua</a>
+                    </div>
+                    <div class="date-copyright"><span>© 2022 Laba6</span></div>
+                </div>
+            </section>
+        </footer>
+        <div class="to-up-button__wrapper">
+            <a href="#up" class="to-up-button"></a>
+        </div>
+    </div>
+    <script src="/script/jquery.min.js"></script>
+    <script src="/script/getProducts.js"></script>
+    <script src="/script/crudProduct.js"></script>
+    <script src="/script/sortProducts.js"></script>
+    <script src="/script/filterProducts.js"></script>
+    <script src="/script/script.js"></script>
+    <script src="/script/updateCartIcon.js"></script>
+</body>
+</html>

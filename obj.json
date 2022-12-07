@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "name": "Medium shot, studio",
+        "src": "/media/agent.png",
+        "price": 500,
+        "isAvailable": true
+    },
+    {
+        "id": 2,
+        "name": "Full shot, home",
+        "src": "/media/pilya_u_lelya.png",
+        "price": 300,
+        "isAvailable": true
+    },
+    {
+        "id": 3,
+        "name": "American shot, studio",
+        "src": "/media/djsamurai.png",
+        "price": 400,
+        "isAvailable": true
+    },
+    {
+        "id": 4,
+        "name": "Full shot, city",
+        "src": "/media/guchiman.png",
+        "price": 600,
+        "isAvailable": true
+    },
+    {
+        "id": 5,
+        "name": "Full shot, nature",
+        "src": "/media/tyoma_visit.png",
+        "price": 500,
+        "isAvailable": false
+    },
+    {
+        "id": 6,
+        "name": "Italian shot",
+        "src": "/media/krik.png",
+        "price": 450,
+        "isAvailable": false
+    },
+    {
+        "id": 7,
+        "name": "Full shot, studio",
+        "src": "/media/lezhit.png",
+        "price": 250,
+        "isAvailable": true
+    },
+    {
+        "id": 8,
+        "name": "Composition",
+        "src": "/media/masterskaya.png",
+        "price": 600,
+        "isAvailable": true
+    },
+    {
+        "id": 9,
+        "name": "Portraits",
+        "src": "/media/misha_kozyr.png",
+        "price": 550,
+        "isAvailable": false
+    },
+    {
+        "id": 10,
+        "name": "Portraits (dlc)",
+        "src": "/media/mrpivo.png",
+        "price": 150,
+        "isAvailable": true
+    },
+    {
+        "id": 11,
+        "name": "Close-up",
+        "src": "/media/pilya_ochen.png",
+        "price": 499,
+        "isAvailable": false
+    },
+    {
+        "id": 12,
+        "name": "Portraits, part 2",
+        "src": "/media/portrait3.png",
+        "price": 600,
+        "isAvailable": true
+    }
+]
